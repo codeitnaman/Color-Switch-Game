@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<ScrollPane hbarPolicy="NEVER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" pannable="true" prefHeight="700.0" prefWidth="500.0" style="-fx-background-color: #1c1c1b;" vbarPolicy="ALWAYS" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.SGController">
+   <content>
+      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="814.0" prefWidth="486.0" style="-fx-background-color: #1c1c1b;">
+         <children>
+            <Label layoutX="112.0" prefHeight="67.0" prefWidth="260.0" style="-fx-background-color: #1c1c1b;" text="  SAVED GAMES" textFill="WHITE">
+               <font>
+                  <Font name="Berlin Sans FB" size="36.0" />
+               </font>
+            </Label>
+            <Button fx:id="button1" disable="true" layoutX="51.0" layoutY="97.0" mnemonicParsing="false" onMouseClicked="#loadGame1" prefHeight="33.0" prefWidth="123.0" style="-fx-background-color: #199cd4; -fx-background-radius: 6;" text="NAME" textFill="WHITE" visible="false">
+               <font>
+                  <Font name="Berlin Sans FB" size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="button2" disable="true" layoutX="311.0" layoutY="97.0" mnemonicParsing="false" onMouseClicked="#loadGame2" prefHeight="33.0" prefWidth="123.0" style="-fx-background-color: #199cd4; -fx-background-radius: 6;" text="NAME" textFill="WHITE" visible="false">
+               <font>
+                  <Font name="Berlin Sans FB" size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="button3" disable="true" layoutX="51.0" layoutY="171.0" mnemonicParsing="false" onMouseClicked="#loadGame3" prefHeight="33.0" prefWidth="123.0" style="-fx-background-color: #199cd4; -fx-background-radius: 6;" text="NAME" textFill="WHITE" visible="false">
+               <font>
+                  <Font name="Berlin Sans FB" size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="button4" disable="true" layoutX="311.0" layoutY="171.0" mnemonicParsing="false" onMouseClicked="#loadGame4" prefHeight="33.0" prefWidth="123.0" style="-fx-background-color: #199cd4; -fx-background-radius: 6;" text="NAME" textFill="WHITE" visible="false">
+               <font>
+                  <Font name="Berlin Sans FB" size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="button5" disable="true" layoutX="52.0" layoutY="238.0" mnemonicParsing="false" onMouseClicked="#loadGame5" prefHeight="33.0" prefWidth="123.0" style="-fx-background-color: #199cd4; -fx-background-radius: 6;" text="NAME" textFill="WHITE" visible="false">
+               <font>
+                  <Font name="Berlin Sans FB" size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="button9" disable="true" layoutX="52.0" layoutY="374.0" mnemonicParsing="false" onMouseClicked="#loadGame6" prefHeight="33.0" prefWidth="123.0" style="-fx-background-color: #199cd4; -fx-background-radius: 6;" text="NAME" textFill="WHITE" visible="false">
+               <font>
+                  <Font name="Berlin Sans FB" size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="button11" disable="true" layoutX="51.0" layoutY="438.0" mnemonicParsing="false" onMouseClicked="#loadGame7" prefHeight="33.0" prefWidth="123.0" style="-fx-background-color: #199cd4; -fx-background-radius: 6;" text="NAME" textFill="WHITE" visible="false">
+               <font>
+                  <Font name="Berlin Sans FB" size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="button12" disable="true" layoutX="311.0" layoutY="438.0" mnemonicParsing="false" onMouseClicked="#loadGame8" prefHeight="33.0" prefWidth="123.0" style="-fx-background-color: #199cd4; -fx-background-radius: 6;" text="NAME" textFill="WHITE" visible="false">
+               <font>
+                  <Font name="Berlin Sans FB" size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="button7" disable="true" layoutX="52.0" layoutY="303.0" mnemonicParsing="false" onMouseClicked="#loadGame9" prefHeight="33.0" prefWidth="123.0" style="-fx-background-color: #199cd4; -fx-background-radius: 6;" text="NAME" textFill="WHITE" visible="false">
+               <font>
+                  <Font name="Berlin Sans FB" size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="button10" disable="true" layoutX="311.0" layoutY="375.0" mnemonicParsing="false" onMouseClicked="#loadGame10" prefHeight="33.0" prefWidth="123.0" style="-fx-background-color: #199cd4; -fx-background-radius: 6;" text="NAME" textFill="WHITE" visible="false">
+               <font>
+                  <Font name="Berlin Sans FB" size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="button8" disable="true" layoutX="311.0" layoutY="303.0" mnemonicParsing="false" onMouseClicked="#loadGame11" prefHeight="33.0" prefWidth="123.0" style="-fx-background-color: #199cd4; -fx-background-radius: 6;" text="NAME" textFill="WHITE" visible="false">
+               <font>
+                  <Font name="Berlin Sans FB" size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="button6" disable="true" layoutX="311.0" layoutY="238.0" mnemonicParsing="false" onMouseClicked="#loadGame12" prefHeight="33.0" prefWidth="123.0" style="-fx-background-color: #199cd4; -fx-background-radius: 6;" text="NAME" textFill="WHITE" visible="false">
+               <font>
+                  <Font name="Berlin Sans FB" size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="button13" disable="true" layoutX="52.0" layoutY="497.0" mnemonicParsing="false" onMouseClicked="#loadGame13" prefHeight="33.0" prefWidth="123.0" style="-fx-background-color: #199cd4; -fx-background-radius: 6;" text="NAME" textFill="WHITE" visible="false">
+               <font>
+                  <Font name="Berlin Sans FB" size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="button14" disable="true" layoutX="311.0" layoutY="497.0" mnemonicParsing="false" onMouseClicked="#loadGame14" prefHeight="33.0" prefWidth="123.0" style="-fx-background-color: #199cd4; -fx-background-radius: 6;" text="NAME" textFill="WHITE" visible="false">
+               <font>
+                  <Font name="Berlin Sans FB" size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="button15" disable="true" layoutX="52.0" layoutY="558.0" mnemonicParsing="false" onMouseClicked="#loadGame15" prefHeight="33.0" prefWidth="123.0" style="-fx-background-color: #199cd4; -fx-background-radius: 6;" text="NAME" textFill="WHITE" visible="false">
+               <font>
+                  <Font name="Berlin Sans FB" size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="button16" disable="true" layoutX="311.0" layoutY="558.0" mnemonicParsing="false" onMouseClicked="#loadGame16" prefHeight="33.0" prefWidth="123.0" style="-fx-background-color: #199cd4; -fx-background-radius: 6;" text="NAME" textFill="WHITE" visible="false">
+               <font>
+                  <Font name="Berlin Sans FB" size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="button17" disable="true" layoutX="52.0" layoutY="619.0" mnemonicParsing="false" onMouseClicked="#loadGame17" prefHeight="33.0" prefWidth="123.0" style="-fx-background-color: #199cd4; -fx-background-radius: 6;" text="NAME" textFill="WHITE" visible="false">
+               <font>
+                  <Font name="Berlin Sans FB" size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="button18" disable="true" layoutX="311.0" layoutY="619.0" mnemonicParsing="false" onMouseClicked="#loadGame18" prefHeight="33.0" prefWidth="123.0" style="-fx-background-color: #199cd4; -fx-background-radius: 6;" text="NAME" textFill="WHITE" visible="false">
+               <font>
+                  <Font name="Berlin Sans FB" size="18.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </content>
+</ScrollPane>

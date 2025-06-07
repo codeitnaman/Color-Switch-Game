@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.shape.Arc?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Polygon?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane onKeyPressed="#pressed" onKeyReleased="#KeyReleased" prefHeight="700.0" prefWidth="500.0" style="-fx-background-color: #1c1c1b;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.GameController">
+   <children>
+      <Button fx:id="psButton" layoutX="6.0" layoutY="14.0" mnemonicParsing="false" onMouseClicked="#pauseGame" prefHeight="50.0" prefWidth="50.0" style="-fx-background-radius: 1000;" text="Pause" />
+      <Label fx:id="scoreBoard" layoutX="412.0" layoutY="44.0" prefHeight="46.0" prefWidth="66.0" text="00" textFill="WHITE">
+         <font>
+            <Font name="Algerian" size="49.0" />
+         </font>
+      </Label>
+      <Button layoutX="478.0" layoutY="674.0" mnemonicParsing="false" style="-fx-background-color: #1c1c1b;" />
+      <StackPane layoutX="100.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="700.0" prefWidth="300.0">
+         <children>
+            <Group fx:id="obstacle1" translateY="-100.0">
+               <children>
+                  <Arc fx:id="redArc" fill="#ff1f1f" length="90.0" radiusX="100.0" radiusY="100.0" startAngle="90.0" stroke="BLACK" strokeType="INSIDE" type="ROUND" />
+                  <Arc fx:id="greenArc" fill="#c3ff20" length="90.0" radiusX="100.0" radiusY="100.0" stroke="BLACK" strokeLineCap="ROUND" strokeType="INSIDE" type="ROUND" />
+                  <Arc fx:id="arc31" fill="#a219dd" length="90.0" radiusX="100.0" radiusY="100.0" startAngle="180.0" stroke="BLACK" strokeType="INSIDE" type="ROUND" />
+                  <Arc fx:id="blueArc" fill="#1fe3ff" length="90.0" radiusX="100.0" radiusY="100.0" startAngle="270.0" stroke="BLACK" strokeType="INSIDE" type="ROUND" />
+                  <Circle fill="#1c1c1b" pickOnBounds="true" radius="83.0" stroke="BLACK" strokeType="INSIDE" />
+               </children>
+            </Group>
+            <Group fx:id="colorSwitcher" translateY="80.0">
+               <children>
+                  <Arc fx:id="arc111" fill="#ff1f1f" length="90.0" radiusX="20.0" radiusY="20.0" startAngle="90.0" stroke="BLACK" strokeType="INSIDE" type="ROUND" />
+                  <Arc fx:id="arc211" fill="#c3ff20" length="90.0" radiusX="20.0" radiusY="20.0" stroke="BLACK" strokeLineCap="ROUND" strokeType="INSIDE" type="ROUND" />
+                  <Arc fx:id="arc311" fill="#a219dd" length="90.0" radiusX="20.0" radiusY="20.0" startAngle="180.0" stroke="BLACK" strokeType="INSIDE" type="ROUND" />
+                  <Arc fx:id="arc411" fill="#1fe3ff" length="90.0" radiusX="20.0" radiusY="20.0" startAngle="270.0" stroke="BLACK" strokeType="INSIDE" type="ROUND" />
+               </children>
+            </Group>
+            <Circle fx:id="ball" fill="DODGERBLUE" radius="10.0" stroke="BLACK" strokeType="INSIDE" translateY="250.0" />
+            <Group fx:id="rectObstacle" translateY="-460.0">
+               <children>
+                  <Line fx:id="line2" endX="-100.0" endY="200.0" layoutX="179.0" layoutY="-7.0" startX="-100.0" stroke="#c3ff20" strokeLineCap="ROUND" strokeWidth="17.0" />
+                  <Line endX="100.0" layoutX="-22.0" layoutY="-7.0" startX="-100.0" stroke="#ff1f1f" strokeLineCap="ROUND" strokeWidth="17.0" />
+                  <Line endX="100.0" endY="100.0" layoutX="-222.0" layoutY="93.0" startX="100.0" startY="-100.0" stroke="#a219dd" strokeLineCap="ROUND" strokeWidth="17.0" style="-fx-stroke-line-join: circle;" />
+                  <Line endX="100.0" layoutX="-22.0" layoutY="193.0" startX="-100.0" stroke="#1fe3ff" strokeLineCap="ROUND" strokeWidth="17.0" />
+               </children>
+            </Group>
+            <Group fx:id="plus1" translateX="-76.0" translateY="-820.0">
+               <children>
+                  <Line fx:id="purLine" endX="100.0" endY="-25.0" layoutX="-101.0" layoutY="100.0" startX="100.0" startY="-100.0" stroke="#a219dd" strokeLineCap="ROUND" strokeWidth="13.0" style="-fx-stroke-line-join: circle;" />
+                  <Line fx:id="greenLine" endX="-100.0" endY="75.0" layoutX="98.0" layoutY="-75.0" startX="-100.0" stroke="#c3ff20" strokeLineCap="ROUND" strokeWidth="13.0" />
+                  <Line fx:id="blueLine" endX="-25.0" layoutX="99.0" startX="-100.0" stroke="#1fe3ff" strokeLineCap="ROUND" strokeWidth="13.0" />
+                  <Line fx:id="redLine" endX="-25.0" layoutX="24.0" startX="-100.0" stroke="#ff1f1f" strokeLineCap="ROUND" strokeWidth="13.0" />
+               </children>
+            </Group>
+            <Group fx:id="colorSwitcher1" layoutX="160.0" layoutY="360.0" translateY="-280.0">
+               <children>
+                  <Arc fx:id="arc1111" fill="#ff1f1f" length="90.0" radiusX="20.0" radiusY="20.0" startAngle="90.0" stroke="BLACK" strokeType="INSIDE" type="ROUND" />
+                  <Arc fx:id="arc2111" fill="#c3ff20" length="90.0" radiusX="20.0" radiusY="20.0" stroke="BLACK" strokeLineCap="ROUND" strokeType="INSIDE" type="ROUND" />
+                  <Arc fx:id="arc3111" fill="#a219dd" length="90.0" radiusX="20.0" radiusY="20.0" startAngle="180.0" stroke="BLACK" strokeType="INSIDE" type="ROUND" />
+                  <Arc fx:id="arc4111" fill="#1fe3ff" length="90.0" radiusX="20.0" radiusY="20.0" startAngle="270.0" stroke="BLACK" strokeType="INSIDE" type="ROUND" />
+               </children>
+            </Group>
+            <Group fx:id="colorSwitcher2" layoutX="160.0" layoutY="360.0" translateY="-640.0">
+               <children>
+                  <Arc fx:id="arc1112" fill="#ff1f1f" length="90.0" radiusX="20.0" radiusY="20.0" startAngle="90.0" stroke="BLACK" strokeType="INSIDE" type="ROUND" />
+                  <Arc fx:id="arc2112" fill="#c3ff20" length="90.0" radiusX="20.0" radiusY="20.0" stroke="BLACK" strokeLineCap="ROUND" strokeType="INSIDE" type="ROUND" />
+                  <Arc fx:id="arc3112" fill="#a219dd" length="90.0" radiusX="20.0" radiusY="20.0" startAngle="180.0" stroke="BLACK" strokeType="INSIDE" type="ROUND" />
+                  <Arc fx:id="arc4112" fill="#1fe3ff" length="90.0" radiusX="20.0" radiusY="20.0" startAngle="270.0" stroke="BLACK" strokeType="INSIDE" type="ROUND" />
+               </children>
+            </Group>
+            <Group fx:id="plus2" rotate="180.0" translateX="76.0" translateY="-820.0">
+               <children>
+                  <Line endX="100.0" endY="-25.0" layoutX="-101.0" layoutY="100.0" startX="100.0" startY="-100.0" stroke="#c3ff20" strokeLineCap="ROUND" strokeWidth="13.0" style="-fx-stroke-line-join: circle;" />
+                  <Line endX="-100.0" endY="75.0" layoutX="98.0" layoutY="-75.0" startX="-100.0" stroke="#a219dd" strokeLineCap="ROUND" strokeWidth="13.0" />
+                  <Line endX="-25.0" layoutX="99.0" startX="-100.0" stroke="#1fe3ff" strokeLineCap="ROUND" strokeWidth="13.0" />
+                  <Line endX="-25.0" layoutX="24.0" startX="-100.0" stroke="#ff1f1f" strokeLineCap="ROUND" strokeWidth="13.0" />
+               </children>
+            </Group>
+            <Group fx:id="star1" translateY="-100.0">
+               <children>
+                  <Polygon fill="WHITE" points="-11.600006103515625, -24.0, 21.199981689453125, -24.0, 3.600006103515625, -53.600006103515625" stroke="WHITE" strokeType="INSIDE" />
+                  <Polygon fill="WHITE" points="-11.600006103515625, -24.0, 21.199981689453125, -24.0, 3.600006103515625, -53.600006103515625" rotate="180.0" stroke="WHITE" strokeType="INSIDE" translateY="10.0" />
+               </children>
+            </Group>
+            <Group fx:id="star2" translateY="-460.0">
+               <children>
+                  <Polygon fill="WHITE" points="-11.600006103515625, -24.0, 21.199981689453125, -24.0, 3.600006103515625, -53.600006103515625" stroke="WHITE" strokeType="INSIDE" />
+                  <Polygon fill="WHITE" points="-11.600006103515625, -24.0, 21.199981689453125, -24.0, 3.600006103515625, -53.600006103515625" rotate="180.0" stroke="WHITE" strokeType="INSIDE" translateY="10.0" />
+               </children>
+            </Group>
+         </children>
+      </StackPane>
+      <Label fx:id="sc" layoutX="378.0" text="score" textFill="WHITE">
+         <font>
+            <Font name="Algerian" size="39.0" />
+         </font>
+      </Label>
+      <Group fx:id="displayPause" layoutX="-259.0" layoutY="319.0">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1c1c1b" height="250.0" layoutX="-141.0" layoutY="-94.0" stroke="BLACK" strokeType="INSIDE" width="400.0" />
+            <Label layoutX="-6.0" layoutY="-90.0" text="score" textFill="WHITE">
+               <font>
+                  <Font name="Algerian" size="39.0" />
+               </font>
+            </Label>
+            <Label fx:id="scoreBoard1" layoutX="26.0" layoutY="-46.0" prefHeight="46.0" prefWidth="66.0" text="00" textFill="WHITE">
+               <font>
+                  <Font name="Algerian" size="49.0" />
+               </font>
+            </Label>
+            <Button fx:id="resume" layoutX="-97.0" layoutY="21.0" mnemonicParsing="false" onMouseClicked="#resumeGame" prefHeight="33.0" prefWidth="123.0" style="-fx-background-radius: 6; -fx-background-color: #199cd4; -fx-text-fill: #fcfeff;" text="RESUME">
+               <font>
+                  <Font name="Berlin Sans FB" size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="restart" layoutX="100.0" layoutY="21.0" mnemonicParsing="false" onMouseClicked="#restartGame" prefHeight="33.0" prefWidth="123.0" style="-fx-background-radius: 6; -fx-background-color: #199cd4; -fx-text-fill: #fcfeff;" text="RESTART">
+               <font>
+                  <Font name="Berlin Sans FB" size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="save" layoutX="-97.0" layoutY="81.0" mnemonicParsing="false" onMouseClicked="#saveGame" prefHeight="33.0" prefWidth="123.0" style="-fx-background-radius: 6; -fx-background-color: #199cd4; -fx-text-fill: #fcfeff;" text="SAVE GAME">
+               <font>
+                  <Font name="Berlin Sans FB" size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="exit" layoutX="100.0" layoutY="81.0" mnemonicParsing="false" onMouseClicked="#exitGame" prefHeight="33.0" prefWidth="123.0" style="-fx-background-radius: 6; -fx-background-color: #199cd4; -fx-text-fill: #fcfeff;" text="EXIT">
+               <font>
+                  <Font name="Berlin Sans FB" size="18.0" />
+               </font>
+            </Button>
+         </children>
+      </Group>
+      <Group fx:id="savePannel" layoutX="-276.0" layoutY="598.0">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1c1c1b" height="250.0" layoutX="-147.0" layoutY="-90.0" stroke="BLACK" strokeType="INSIDE" width="400.0" />
+            <TextField fx:id="nameOfGame" layoutX="75.0" layoutY="-17.0" opacity="0.88" prefHeight="33.0" prefWidth="123.0" style="-fx-background-color: #ffffff; -fx-background-radius: 6;" />
+            <Label layoutX="-96.0" layoutY="-17.0" prefHeight="33.0" prefWidth="123.0" style="-fx-background-color: #199cd4; -fx-text-fill: #fcfeff; -fx-background-radius: 6;" text="  ENTER NAME">
+               <font>
+                  <Font name="Berlin Sans FB" size="18.0" />
+               </font>
+            </Label>
+            <Button layoutX="-8.0" layoutY="41.0" mnemonicParsing="false" onMouseClicked="#save" prefHeight="33.0" prefWidth="123.0" style="-fx-background-color: #199cd4; -fx-text-fill: #fcfeff; -fx-background-radius: 6;" text="SAVE">
+               <font>
+                  <Font name="Berlin Sans FB" size="18.0" />
+               </font>
+            </Button>
+            <Button layoutX="-8.0" layoutY="95.0" mnemonicParsing="false" onMouseClicked="#cancel" prefHeight="33.0" prefWidth="123.0" style="-fx-background-color: #199cd4; -fx-text-fill: #fcfeff; -fx-background-radius: 6;" text="CANCEL">
+               <font>
+                  <Font name="Berlin Sans FB" size="18.0" />
+               </font>
+            </Button>
+         </children>
+      </Group>
+      <Group fx:id="displayPause1" layoutX="-533.0" layoutY="539.0">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1c1c1b" height="288.0" layoutX="-22.0" layoutY="-80.0" stroke="BLACK" strokeType="INSIDE" width="316.0" />
+            <Label fx:id="sc2" layoutX="-22.0" layoutY="64.0" text="REQUIRED SCORE" textFill="WHITE">
+               <font>
+                  <Font name="Algerian" size="39.0" />
+               </font>
+            </Label>
+            <Label fx:id="sc1" layoutX="68.0" layoutY="-84.0" text="score" textFill="WHITE">
+               <font>
+                  <Font name="Algerian" size="39.0" />
+               </font>
+            </Label>
+            <Label fx:id="scoreBoard12" layoutX="100.0" layoutY="-40.0" prefHeight="46.0" prefWidth="66.0" text="00" textFill="WHITE">
+               <font>
+                  <Font name="Algerian" size="49.0" />
+               </font>
+            </Label>
+            <Label fx:id="scoreBoard111" layoutX="100.0" layoutY="108.0" prefHeight="46.0" prefWidth="66.0" text="00" textFill="WHITE">
+               <font>
+                  <Font name="Algerian" size="49.0" />
+               </font>
+            </Label>
+            <Button fx:id="resume1" layoutX="72.0" layoutY="23.0" mnemonicParsing="false" onMouseClicked="#resumeGame1" prefHeight="33.0" prefWidth="123.0" style="-fx-background-radius: 6; -fx-background-color: #199cd4; -fx-text-fill: #fcfeff;" text="RESUME">
+               <font>
+                  <Font name="Berlin Sans FB" size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="cancel1" layoutX="72.0" layoutY="169.0" mnemonicParsing="false" onMouseClicked="#cancel1" prefHeight="33.0" prefWidth="123.0" style="-fx-background-radius: 6; -fx-background-color: #199cd4; -fx-text-fill: #fcfeff;" text="CANCEL">
+               <font>
+                  <Font name="Berlin Sans FB" size="18.0" />
+               </font>
+            </Button>
+         </children>
+      </Group>
+   </children>
+</AnchorPane>
